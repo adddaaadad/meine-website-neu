@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Kontakt" sideBarActiveItemID="contact">
+  <section class="px-4 py-10 max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6">Kontaktiere mich</h1>
+    <p class="mb-8 text-lg">
+      Du kannst mir gern �ber dieses Formular eine Nachricht schicken. Ich melde mich so bald wie m�glich zur�ck.
+    </p>
+
+    <form
+      action="https://formsubmit.co/nazari.qasem@posteo.com"
+      method="POST"
+      class="form-control gap-4"
+    >
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://thunderous-fudge-9ddaf7.netlify.app/thanks" />
+
+      <input type="text" name="name" placeholder="Dein Name" class="input input-bordered w-full" required />
+      <input type="email" name="email" placeholder="Deine E-Mail" class="input input-bordered w-full" required />
+      <textarea name="message" class="textarea textarea-bordered w-full" rows="5" placeholder="Deine Nachricht..." required></textarea>
+      <button type="submit" class="btn btn-primary">Absenden</button>
+    </form>
+  </section>
+</BaseLayout>
