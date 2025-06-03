@@ -1,56 +1,23 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
-tags: ["tokio"]
+title: "ein sicheres VPN-System mit WireGuard"
+description: "So habe ich ein sicheres VPN-System mit WireGuard eingerichtet"
+pubDate: "Sep 10 2024"
+heroImage: "/wireguard.webp"
+tags: ["München"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+Manchmal braucht man nicht viel, um ein stabiles und sicheres System aufzubauen – nur ein bisschen Linux, ein Ziel, und die richtige Doku. In diesem Beitrag erzähle ich dir, wie ich in einem Projekt einen WireGuard-VPN-Zugang auf einem Debian-Server eingerichtet und in ein bestehendes Netzwerk eingebunden habe – alles Schritt für Schritt, ohne Schnickschnack.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Das Ziel war klar: Mitarbeitende sollten von überall sicher auf interne Ressourcen zugreifen können, ohne auf teure Drittanbieter-Lösungen angewiesen zu sein. WireGuard war dafür die passende Wahl – schnell, schlank, sicher.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+Ich habe mit einer bestehenden virtuellen Debian-Instanz gearbeitet. Nach der Installation von WireGuard (apt install wireguard) generierte ich die benötigten Schlüsselpaare für Server und Clients. Mit einer übersichtlichen Konfiguration konnte der Tunnel schnell aufgebaut werden. Besonders beeindruckend war, wie effizient WireGuard funktioniert – minimalistisch und performant, ganz ohne unnötigen Ballast.
+
+Zur Absicherung wurden mit ufw (Uncomplicated Firewall) gezielte Regeln definiert, die nur den nötigen Datenverkehr zulassen. Der Zugriff wurde zusätzlich auf bestimmte IP-Adressen eingeschränkt, und die Protokollierung der Verbindungen wurde so eingerichtet, dass eine spätere Auswertung problemlos möglich ist.
+
+Ein wichtiger Aspekt war die Integration mit dem bestehenden Backup-System. Dadurch konnten wir sicherstellen, dass VPN-Aktivitäten dokumentiert bleiben und im Notfall wiederherstellbar sind. Die Backup-Prozesse laufen automatisiert und werden regelmäßig überprüft.
+
+Das Ergebnis: zuverlässige Verbindungen, geringere Support-Anfragen und zufriedene Nutzer. Genau solche Aufgaben zeigen, wie technische Lösungen reale Herausforderungen im Alltag erleichtern können.
+
+In Zukunft möchte ich das Setup eventuell um ein kleines Webinterface erweitern, um die Verwaltung noch komfortabler zu gestalten – vielleicht wird das dann Thema meines nächsten Blogbeitrags ;)
