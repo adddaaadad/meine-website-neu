@@ -7,7 +7,7 @@ updatedDate: "Jun 4 2025"
 pricing: "2,50 €"
 badge: "Empfehlung"
 checkoutUrl: "https://paypal.me/kannmandasessen/2,5"
-heroImage: "/store/shopping.webp"
+heroImage: "/shopping.webp"
 ---
 
 **Ich habe dieses Buch selbst gelesen – und es hat mich sehr bewegt.**
