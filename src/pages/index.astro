@@ -2,9 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
+import createSlug from "../lib/createSlug";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// پست‌ها رو از content/blog می‌خونیم و مرتب می‌کنیم بر اساس pubDate
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// فقط ۳ پست آخر رو می‌گیریم
 const last_posts = posts.slice(0, 3);
 ---
 
@@ -23,7 +28,7 @@ const last_posts = posts.slice(0, 3);
       <div class="text-2xl font-bold mb-2">Meine Rollen:</div>
       <ul class="list-disc list-inside text-lg leading-8">
         <li>💻 Netzwerkadministrator (SysAdmin)</li>
-        <li>⚽ Fußballspieler </li>
+        <li>⚽ Fußballspieler</li>
         <li>🤸‍♂️ Capoeirista</li>
         <li>☕ Barista (mit Liebe zum Kaffee)</li>
       </ul>
@@ -34,9 +39,7 @@ const last_posts = posts.slice(0, 3);
     </div>
   </div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">Meine letzten Projekte </div>
-  </div>
+  <div class="text-3xl w-full font-bold mb-2">Meine letzten Projekte</div>
 
   <HorizontalCard
     title="VPN-Server und Netzwerksicherheit"
@@ -55,9 +58,7 @@ const last_posts = posts.slice(0, 3);
   />
   <div class="divider my-0"></div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Neueste Blog-Beiträge</div>
-  </div>
+  <div class="text-3xl w-full font-bold mb-5 mt-10">Neueste Blog-Beiträge</div>
 
   {
     last_posts.map((post) => (
@@ -69,6 +70,7 @@ const last_posts = posts.slice(0, 3);
           url={"/blog/" + createSlug(post.data.title, post.slug)}
           target="_self"
           badge={post.data.badge}
+          tags={post.data.tags}
         />
         <div class="divider my-0" />
       </>
