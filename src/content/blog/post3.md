@@ -2,7 +2,7 @@
 title: "Vergleich der beliebtesten Messenger-Apps: Sicherheit und Datenschutz im Fokus (Stand: Juni 2025)"
 description: "Telegram, WhatsApp, Signal oder IMO – welcher Messenger schützt deine Daten wirklich?"
 pubDate: "2025-06-09"
-heroImage: "/post_img.webp"
+heroImage: "/post_img1.webp"
 ---
 
 ## Einleitung
