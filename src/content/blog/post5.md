@@ -2,7 +2,7 @@
 title: "🔍 Alles über eSIM auf dem iPhone 14 Pro Max: Technik, Geschichte und Nutzung"
 description: "Von der Technik über die Geschichte bis zur praktischen Anwendung: So nutzt du die eSIM-Funktion deines iPhones optimal."
 pubDate: "2025-06-10"
-heroImage: "/images/esim-iphone14promax.webp"
+heroImage: "post_imgh4.webp"
 ---
 
 ## 📱 Was ist eSIM?
