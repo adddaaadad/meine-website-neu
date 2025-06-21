@@ -1,102 +1,104 @@
 ---
-title: "🧩 تجربه استفاده از اپلیکیشن YES از اروپا"
-description: "وقتی یک تماس ساده با خانواده، تبدیل به نبرد با تحریم، فیلترینگ و ناسازگاری فنی می‌شود."
+title: "📵 بله aus Europa nutzen: Ein Erfahrungsbericht mit Hindernissen"
+description: "Wenn ein einfacher Videoanruf zur Familie zum Kampf mit Sanktionen, Technik und Browser-Kompatibilität wird."
 pubDate: "Jun 21 2025"
-heroImage: "/yes-app.webp"
+heroImage: "/bale-app.webp"
 ---
 
-## مقدمه
+## Einleitung
 
-در روزگاری که تماس تصویری و گفت‌وگوهای آنلاین برای خیلی‌ها ساده و روزمره است، برای ما ایرانی‌های خارج از کشور همین ارتباط ساده با خانواده می‌تواند پر از مانع باشد. در این وبلاگ تجربه واقعی من از تلاش برای استفاده از اپلیکیشن ایرانی YES از اروپا را می‌خوانید – از مرورگرها تا شبیه‌ساز اندروید، و همه موانعی که در مسیرم قرار گرفت.
-
----
-
-## 1. چرا اصلاً YES؟
-
-با تبدیل شدن اینترنت ایران به نسخه‌ای محدود و اصطلاحاً "ملی"، دسترسی خانواده‌ام به واتساپ، تلگرام و... بسیار سخت شده بود. برای برقراری تماس، ناچار شدم به اپلیکیشن‌های داخلی مثل YES رو بیاورم – اپی که در ایران رایج است اما از خارج استفاده از آن تقریباً غیرممکن است.
+In einer Zeit, in der Videoanrufe und Messenger für viele selbstverständlich sind, kann selbst der Kontakt zur eigenen Familie in Iran für Auslandsiraner zu einer frustrierenden Herausforderung werden.  
+Dieser Beitrag schildert meine persönlichen, technischen und menschlichen Erfahrungen beim Versuch, die iranische App **بله** aus Deutschland zu nutzen.
 
 ---
 
-## 2. تلاش با مرورگر Waterfox – ناامیدکننده
+## 1. Warum überhaupt بله?
 
-اولین تلاش من ورود از طریق مرورگر Waterfox روی ویندوز بود. آدرس رسمی وب‌اپلیکیشن YES (`https://bale.web.com`) بود، اما:
-
-- صفحه به‌درستی لود نشد  
-- کد تأیید (Verification Code) دریافت نشد  
-→ احتمالاً به دلیل ناسازگاری مرورگر یا بلاک بودن IP اروپا
+Durch die zunehmende Abschottung des iranischen Internets (Nationales Netz), sind internationale Dienste wie WhatsApp, Telegram oder FaceTime im Iran kaum noch erreichbar.  
+**بله** ist eine beliebte iranische App für Videoanrufe, Messaging und Gruppenkommunikation – also suchte ich eine Möglichkeit, **aus Europa heraus** mit meiner Familie in Kontakt zu bleiben.
 
 ---
 
-## 3. DuckDuckGo – ورود موفق، اما بدون مخاطب
+## 2. Erster Versuch mit Waterfox – keine Chance
 
-بعد از Waterfox، با مرورگر DuckDuckGo تلاش کردم و این‌بار توانستم وارد حساب کاربری شوم. اما:
+Mein Standardbrowser ist Waterfox – ein datenschutzfreundlicher Firefox-Fork.  
+Ich öffnete die Web-App unter `https://bale.web.com`, doch:
 
-- مخاطبین نمایش داده نشدند  
-- امکان افزودن مخاطب جدید هم نبود
-
-علت:
-
-- DuckDuckGo از API مربوط به مخاطبین (Contact Picker API) پشتیبانی نمی‌کند  
-- YES اجازه همگام‌سازی مخاطبین را فقط از طریق موبایل می‌دهد، نه از نسخه وب
+- Die Seite lud nicht richtig  
+- Der Verifizierungscode kam nie an  
+→ Möglicherweise liegt das an Geoblocking oder Inkompatibilität des Browsers
 
 ---
 
-## 4. Safari روی آیفون – آخرین امید، بی‌نتیجه
+## 3. DuckDuckGo-Browser – Einloggen möglich, Kontakte nicht
 
-چون YES اپ رسمی برای iPhone ندارد، سراغ Safari رفتم:
+Mit dem DuckDuckGo-Browser konnte ich mich tatsächlich in **بله** einloggen. Aber:
 
-- تنظیمات Safari را فعال کردم تا به مخاطبین دسترسی داشته باشد  
-- اما حتی با این کار، **کد تأیید ارسال نشد**  
-- تلگرام به‌درستی باز نمی‌شد یا لینک‌ها کار نمی‌کردند
+- Ich konnte keine Kontakte sehen oder hinzufügen  
+- Es war unmöglich, jemanden anzurufen
 
-→ هنوز مشخص نیست مشکل از Safari بود یا از طرف خود YES یا حتی محدودیت‌های ارسال لینک تلگرام از سرورهای ایرانی به IPهای اروپا.
+Warum?
 
----
-
-## 5. اجرای نسخه اندروید با BlueStacks – شکست خورده
-
-تصمیم گرفتم نسخه اندروید YES را روی کامپیوتر امتحان کنم، چون گوشی اندرویدی ندارم. از شبیه‌ساز BlueStacks روی ویندوز 11 Pro استفاده کردم، اما:
-
-- با خطای مربوط به **فعال بودن Hyper-V** مواجه شدم  
-- BlueStacks برای اجرا نیاز به غیرفعال بودن Hyper-V دارد  
-- چون نمی‌خواستم تنظیمات سیستمی را تغییر دهم، ادامه ندادم
+- DuckDuckGo unterstützt die **Contact Picker API** nicht  
+- **بله** erlaubt die Synchronisierung von Kontakten **nur auf mobilen Geräten**, nicht im Webbrowser
 
 ---
 
-## 6. جدول خلاصه موانع فنی
+## 4. Safari auf dem iPhone – letzte Hoffnung, wieder gescheitert
 
-| مرحله                             | نتیجه / مشکل                                                                       |
-|----------------------------------|--------------------------------------------------------------------------------------|
-| مرورگر Waterfox                  | ورود ناموفق – صفحه بارگذاری نشد / کد ارسال نشد                                   |
-| مرورگر DuckDuckGo                | ورود موفق – مخاطبین غیرقابل دسترس                                                 |
-| Safari در iOS                    | امکان ورود نبود – کد تأیید نرسید / تلگرام باز نشد                                |
-| BlueStacks روی ویندوز 11         | اجرا نشد – ناسازگاری با Hyper-V                                                   |
-| ارتباط با مخاطبین از وب         | فقط پس از دریافت دعوت از مخاطب ممکن است – انتخاب دستی مخاطب ممکن نیست         |
+Da **بله** keine native iOS-App anbietet, versuchte ich es über **Safari** auf dem iPhone:
+
+- Ich aktivierte alle nötigen Rechte (Kontakte, Popups, etc.)  
+- Trotzdem erhielt ich **keinen Verifizierungscode**, weder per SMS noch über Telegram  
+→ Ob das Problem beim Browser, iOS oder beim Anbieter liegt, konnte ich nicht herausfinden
 
 ---
 
-## 7. نتیجه‌گیری
+## 5. Android-Version mit BlueStacks? Nicht unter Windows 11 Pro
 
-من فقط می‌خواستم یک تماس تصویری ساده با خانواده‌ام داشته باشم.  
-اما تحریم، فیلترینگ، ناسازگاری فنی و سیاست‌های سخت‌گیرانه باعث شدند حتی این خواسته ساده هم تبدیل به یک جنگ فنی فرسایشی شود.
+Da ich kein Android-Handy habe, versuchte ich die Android-Version von **بله** mit dem Emulator **BlueStacks** zu starten.  
+Doch Windows 11 Pro brachte ein neues Problem:
 
----
-
-## 8. پیشنهاد به توسعه‌دهندگان YES
-
-اگر YES می‌خواهد برای ایرانیان خارج از کشور کاربردی باشد، پیشنهاد می‌کنم:
-
-- پشتیبانی از ارسال کد از طریق SMS یا ایمیل  
-- طراحی اپلیکیشن رسمی iOS  
-- امکان افزودن و نمایش مخاطبین از نسخهٔ وب  
-- راهنمایی روشن برای کاربران خارجی  
-- بهینه‌سازی نسخه اندروید برای اجرا در شبیه‌سازهایی مانند BlueStacks
+❌ **BlueStacks ließ sich wegen aktivierter Hyper-V-Virtualisierung nicht starten**  
+→ Ich wusste nicht, wie ich Hyper-V sicher deaktivieren kann, und gab an dieser Stelle auf
 
 ---
 
-## پایان
+## 6. Technische Zusammenfassung
 
-این تجربه فقط تجربه من نیست. خیلی‌ها مثل من هستند که برای یک تماس ساده با خانواده‌شان باید این مسیر سخت را طی کنند.  
-امیدوارم توسعه‌دهندگان ایرانی این نیاز را ببینند و شرایطی فراهم کنند که "ارتباط" در جهان امروز، آن‌قدر پیچیده و آزاردهنده نباشد.
+| Schritt                           | Problem / Ursache                                                                 |
+|----------------------------------|------------------------------------------------------------------------------------|
+| Waterfox Browser                 | Seite lädt nicht / Verifizierungscode kommt nicht                                |
+| DuckDuckGo Browser               | Login möglich, aber keine Kontakt-Synchronisierung                                |
+| Safari auf iPhone                | Kein Code zur Verifizierung erhalten (Telegram/SMS fehlschlägt)                   |
+| Kontakte im Web nicht verfügbar  | Web-App kann keine Kontakte abrufen oder anzeigen                                 |
+| BlueStacks unter Win11 Pro       | Inkompatibel wegen Hyper-V-Virtualisierung – Emulator startet nicht               |
+| Kein Anrufen möglich             | Nur Teilnahme an Anrufen über Einladungslink – keine aktive Kontaktwahl möglich   |
+
+---
+
+## 7. Fazit: Wenn Technik zwischen Familie steht
+
+Ich wollte einfach nur mit meiner Familie sprechen. Kein Hack, kein Trick – nur ein ganz normaler Videoanruf.  
+Doch Sanktionen, Geoblocking, fehlende Browserunterstützung und technische Einschränkungen machten selbst das **nahezu unmöglich**.
+
+---
+
+## 8. Verbesserungsvorschläge an die Entwickler von بله
+
+Damit **بله** auch für Iraner im Ausland sinnvoll nutzbar wird, empfehle ich:
+
+- Alternativen zur Verifizierung via Telegram (z.B. E-Mail oder SMS)  
+- Eine native App für iOS  
+- Volle Kontakt-Synchronisierung in der Web-App  
+- Kompatibilität mit Emulatoren (z.B. BlueStacks)  
+- Detaillierte Anleitungen für internationale Nutzer
+
+---
+
+## Schlusswort
+
+Diese Erfahrung war mehr als ein technisches Problem – es war eine emotionale Frustration.  
+Ich hoffe, dieser Beitrag hilft nicht nur anderen Betroffenen weiter, sondern zeigt auch den Entwickler*innen, wo echte Verbesserung nötig ist.
 
 ---
